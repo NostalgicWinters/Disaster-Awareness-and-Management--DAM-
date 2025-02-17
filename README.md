@@ -3,24 +3,25 @@
 
 Directory structure:
 └── nostalgicwinters-disaster-awareness-and-management--dam-/
-├── README.md
-├── eslint.config.js
-├── index.html
-├── package.json
-├── vite.config.js
-├── wiki.py
-├── public/
-└── src/
-├── App.jsx
-├── index.css
-├── main.jsx
-├── assets/
-└── components/
-├── Hero.jsx
-├── Home.jsx
-├── Mainmsg.jsx
-├── MapComponent.jsx
-└── Registration.jsx
+    ├── README.md
+    ├── eslint.config.js
+    ├── index.html
+    ├── package.json
+    ├── vite.config.js
+    ├── wiki.py
+    ├── public/
+    └── src/
+        ├── App.jsx
+        ├── index.css
+        ├── main.jsx
+        ├── assets/
+        └── components/
+            ├── Hero.jsx
+            ├── Home.jsx
+            ├── Mainmsg.jsx
+            ├── MapComponent.jsx
+            └── Registration.jsx
+
 
 ## Overview
 
