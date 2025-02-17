@@ -2,13 +2,25 @@
 # Local Disaster Response Coordination Platform
 
 Directory structure:
-
-    └── anmol1789-alertindia/
-    ├── README.md
-    ├── index.html
-    ├── script.js
-    └── style.css
-
+└── nostalgicwinters-disaster-awareness-and-management--dam-/
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package.json
+├── vite.config.js
+├── wiki.py
+├── public/
+└── src/
+├── App.jsx
+├── index.css
+├── main.jsx
+├── assets/
+└── components/
+├── Hero.jsx
+├── Home.jsx
+├── Mainmsg.jsx
+├── MapComponent.jsx
+└── Registration.jsx
 
 ## Overview
 
@@ -29,12 +41,12 @@ In disaster-stricken areas, it is critical to have real-time information on the 
 ## Technologies Used
 
 - **Frontend:**
-  - **React Native** for building cross-platform mobile apps for iOS and Android.
-  - **HTML/CSS** for building the web-based version of the app (optional).
+  - **React Js** for building industry ready and modern looking website.
+  - **OpenStreetApi** to get real time map updates (Under Progress)
 
 - **Backend:**
-  - **Firebase** for real-time data storage, user authentication, and push notifications.
-  - **OpenStreetMap API** for interactive maps, enabling real-time updates of disaster zones and affected areas.
+  - **Express.js** for Easy integration with frontend.
+  - **BeautifulSoup** is a python library used for web scraping to get info from the internet
 
 - **Other Tools:**
   - **Push Notification Services** (via Firebase Cloud Messaging) for instant alerts and updates.
