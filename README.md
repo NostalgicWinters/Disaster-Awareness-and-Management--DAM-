@@ -40,6 +40,11 @@ In disaster-stricken areas, it is critical to have real-time information on the 
 - **Map Integration**: Integrated with OpenStreetMap API, the platform provides real-time visual updates of disaster zones, evacuation routes, and safe zones.
 - **Collaboration with Authorities**: The app will enable government agencies, NGOs, and local community groups to collaborate and coordinate disaster management efforts effectively.
 
+## Website Prototype
+![image alt](https://github.com/NostalgicWinters/Disaster-Awareness-and-Management--DAM-/blob/main/website%20prototype%20.png?raw=true)
+
+![image alt](https://github.com/NostalgicWinters/Disaster-Awareness-and-Management--DAM-/blob/main/website%20prototype2.png?raw=true)
+
 ## Technologies Used
 
 - **Frontend:**
