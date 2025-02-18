@@ -17,7 +17,7 @@ Directory structure:
         ├── main.jsx
         ├── assets/
         └── components/
-    ── Hero.jsx
+         ── Hero.jsx
         ├── Home.jsx
         ├── Mainmsg.jsx
         ├── MapComponent.jsx
