@@ -57,9 +57,6 @@ In disaster-stricken areas, it is critical to have real-time information on the 
 - **Backend:**
   - **Express.js** for Easy integration with frontend.
   - **BeautifulSoup** is a python library used for web scraping to get info from the internet
-
-- **Other Tools:**
-  - **Push Notification Services** (via Firebase Cloud Messaging) for instant alerts and updates.
   
 ## Long-Term Vision
 
