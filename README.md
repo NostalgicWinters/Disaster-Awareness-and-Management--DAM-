@@ -30,7 +30,7 @@ The **Local Disaster Response Coordination Platform** is a mobile and web applic
 
 ## Problem Statement
 
-In disaster-stricken areas, it is critical to have real-time information on the situation to save lives and deploy resources efficiently. Current communication systems are often fragmented, and information sharing can be delayed, which hinders the response. Our platform addresses this issue by offering a fast, collaborative system for reporting, coordinating, and supporting disaster relief 
+In disaster-stricken areas, it is critical to have real-time information on the situation to save lives and deploy resources efficiently. Current communication systems are often fragmented, and information sharing can be delayed, which hinders the response. Our platform addresses this issue by offering a fast, collaborative system for reporting, coordinating, and supporting disaster relief efforts.
 
 ## Features
 
