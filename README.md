@@ -1,5 +1,5 @@
 # Disaster Alert Service India
-# Local Disaster Response Coordination Platform
+# Local Disaster Response Coordination 
 
 Directory structure:
 
