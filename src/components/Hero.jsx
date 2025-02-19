@@ -16,17 +16,9 @@ function Hero() {
                 <Link className='text-white text-2xl p-3 clickableLinks' to="/registration">Report an Incident</Link>
                 <Link className='text-white text-2xl p-3 clickableLinks'>Resources</Link>
                 <Link className='text-white text-2xl p-3 clickableLinks'>Volunteer</Link>
-                <Link className='text-white text-2xl p-3 clickableLinks'>Contact</Link>
+                <Link className='text-white text-2xl p-3 clickableLinks' to="/About">About</Link>
             </div>
         </div>
-        
-
-        
-    </div>
-  )
-}
-
-export default Hero
         
 
         
