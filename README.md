@@ -1,7 +1,7 @@
 # Disaster Alert Service India
 # Local Disaster Response Coordination Platform
 
-Directory structure:
+Directory structure
 
         └── nostalgicwinters-disaster-awareness-and-management--dam-/
         ├── README.md
