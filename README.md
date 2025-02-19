@@ -36,7 +36,6 @@ In disaster-stricken areas, it is critical to have real-time information on the 
 
 - **Real-time Reporting**: Users can report disasters (e.g., floods, earthquakes) by marking affected locations on an interactive map, along with details on the severity and impact of the disaster.
 - **Resource Sharing**: Users can share available resources such as medical supplies, food, and volunteer support to help those in need.
-- **Push Notifications**: The app will send push notifications to users about critical updates, new reports, and available resources.
 - **Map Integration**: Integrated with OpenStreetMap API, the platform provides real-time visual updates of disaster zones, evacuation routes, and safe zones.
 - **Collaboration with Authorities**: The app will enable government agencies, NGOs, and local community groups to collaborate and coordinate disaster management efforts effectively.
 
