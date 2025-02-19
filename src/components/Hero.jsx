@@ -9,7 +9,7 @@ function Hero() {
         </video>
         <div className='flex justify-between'>
             <div>
-                <h1 className='text-white text-3xl p-2'>DisasterResponse</h1>
+                <h1 className='text-white text-3xl p-2'>DisasterAwarenessAndManagement(DAM)</h1>
             </div>
             <div className='flex align-middle'>
                 <Link className='text-white text-2xl p-3 clickableLinks' to='/'>Home</Link>
@@ -19,6 +19,14 @@ function Hero() {
                 <Link className='text-white text-2xl p-3 clickableLinks'>Contact</Link>
             </div>
         </div>
+        
+
+        
+    </div>
+  )
+}
+
+export default Hero
         
 
         
