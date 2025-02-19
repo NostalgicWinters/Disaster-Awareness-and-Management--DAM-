@@ -6,8 +6,8 @@ function About() {
   return (
     <div>
         <Hero />
-        <div className='bg-black blur-xs' style={{zIndex:-1, width:"90%", height:"100%", position:"absolute", opacity:"70%", margin:"3rem" }} ></div>
-        <div className=' text-white' style={{marginTop:"4rem", marginBottom:"4rem", marginLeft:"4rem", marginRight:"8rem"}}>
+        <div className='bg-black blur-xs' style={{zIndex:-1, width:"90%", height:"100%", position:"absolute", opacity:"70%", margin:"3rem", marginTop:"1.75rem" }} ></div>
+        <div className=' text-white' style={{marginTop:"2rem", marginBottom:"4rem", marginLeft:"4rem", marginRight:"8rem"}}>
             <h1 className='text-white text-5xl font-bold m-4'>About Us</h1>
             <h2 className='font-bold text-3xl m-2 mt-4'>Our Mission</h2>
             <p className='m-2 text-xl' >At Disaster Awareness and Management (DAM), we aim to leverage technology to enhance disaster preparedness, response, and relief efforts. Our platform aggregates real-time data from wikipedia and other sources to detect and track natural disasters, providing timely and accurate information to those in need.</p>
