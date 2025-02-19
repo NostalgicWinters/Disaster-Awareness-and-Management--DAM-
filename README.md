@@ -45,7 +45,7 @@ In disaster-stricken areas, it is critical to have real-time information on the 
 
 ![image alt](https://github.com/NostalgicWinters/Disaster-Awareness-and-Management--DAM-/blob/main/website%20prototype2.png?raw=true)
 
-## Prototype of Our wikipedia Web scrapper
+## Prototype of Our Wikipedia Web Scrapper
 ![image alt](https://github.com/NostalgicWinters/Disaster-Awareness-and-Management--DAM-/blob/main/WikiScrapper.png)
 
 ## Technologies Used
