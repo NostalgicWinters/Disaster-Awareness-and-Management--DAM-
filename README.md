@@ -56,6 +56,10 @@ In disaster-stricken areas, it is critical to have real-time information on the 
 - **Frontend:**
   - **React Js** for building industry ready and modern looking website.
   - **OpenStreetApi** to get real time map updates (Under Progress)
+ 
+- **Backend:**
+  - **Express.js** for Easy integration with frontend.
+  - **BeautifulSoup** is a python library used for web scraping to get info from the internet
 
 
   
