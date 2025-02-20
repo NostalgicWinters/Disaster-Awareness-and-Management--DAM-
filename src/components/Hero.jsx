@@ -12,11 +12,11 @@ function Hero() {
                 <h1 className='text-white text-3xl p-2'>DisasterAwarenessAndManagement(DAM)</h1>
             </div>
             <div className='flex align-middle'>
-                <Link className='text-white text-2xl p-3 clickableLinks' to='/'>Home</Link>
-                <Link className='text-white text-2xl p-3 clickableLinks' to="/registration">Report an Incident</Link>
-                <Link className='text-white text-2xl p-3 clickableLinks'>Resources</Link>
-                <Link className='text-white text-2xl p-3 clickableLinks'>Volunteer</Link>
-                <Link className='text-white text-2xl p-3 clickableLinks' to="/About">About</Link>
+                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to='/'>Home</Link>
+                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/registration">Report an Incident</Link>
+                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks'>Resources</Link>
+                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks'>Volunteer</Link>
+                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/About">About</Link>
             </div>
         </div>
         
