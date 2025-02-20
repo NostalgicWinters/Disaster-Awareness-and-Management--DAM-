@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Mainmsg() {
   return (
-    <div className="absolute text-center text-white p-4"  
+    <div className="absolute text-center text-white p-4 font-dm-sans"  
             style={{
                 top: "50%",
                 left: "50%",
