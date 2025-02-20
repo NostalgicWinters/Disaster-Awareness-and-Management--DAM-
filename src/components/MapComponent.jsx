@@ -8,12 +8,12 @@ const MapComponent = () => {
 
   return (
     <MapContainer center={position} zoom={13} style={{ height: "500px", width: "100%" }}>
-      {/* OpenStreetMap Tile Layer */}
+      
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      {/* Marker */}
+      
       <Marker position={position}>
         <Popup>Welcome to London!</Popup>
       </Marker>
