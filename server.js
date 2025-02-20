@@ -32,23 +32,7 @@ const registrationSchema = new mongoose.Schema({
 const Registration = mongoose.model('Registration', registrationSchema);
 
 // API endpoint to handle registration data submission
-app.post('/registeration', async (req, res) => {
-    const { email, mobile, location } = req.body;
 
-    const newRegistration = new Registration({
-        email,
-        mobile,
-        location,
-    });
-
-    try {
-        await newRegistration.save();
-        res.status(200).send('Registration successful');
-    } catch (error) {
-        console.error(error);
-        res.status(500).send('Error saving registration data');
-    }
-});
 
 // Start the server
 const port = 5000;
