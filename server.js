@@ -39,3 +39,21 @@ const port = 5000;
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
+
+app.post('/registeration', async (req, res) => {
+    const { email, mobile, location } = req.body;
+
+    const newRegistration = new Registration({
+        email,
+        mobile,
+        location,
+    });
+
+    try {
+        await newRegistration.save();
+        res.status(200).send('Registration successful');
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Error saving registration data');
+    }
+});
