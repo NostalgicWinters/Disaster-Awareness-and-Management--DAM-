@@ -4,6 +4,7 @@ import Registration from './components/Registration'
 import Login from './components/Login'
 import About from './components/About'
 import Polls from './components/polls'
+import Resources from './components/Resources'
 
 function App() {
 
@@ -27,7 +28,11 @@ function App() {
     {
       path: "/polls",
       element: <Polls />
-    }
+    },
+    {
+      path: "/resources",
+      element: <Resources />
+    },
   ])
 
   return (
