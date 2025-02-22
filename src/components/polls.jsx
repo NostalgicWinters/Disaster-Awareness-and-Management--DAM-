@@ -7,9 +7,13 @@ function Polls() {
   return (
     <div>
       <Hero />
-      <Card />
+      <div className='flex justify-center'>
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   )
 }
 
-export default Polls
+export default Polls;
