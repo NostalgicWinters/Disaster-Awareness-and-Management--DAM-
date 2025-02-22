@@ -1,11 +1,21 @@
-import java.io.IOException;
+import java.util.List;
 
 public class Sender {
+    public static void main(String[] args) {
+        try {
+            // Fetch Email from MongoDB Atlas
+            List<String> emails = SendMailWithAttachment.fetchEmailsFromMongoDB();
+            
+            // Create a single instance of SendMailWithAttachment
+            SendMailWithAttachment sendMailWithAttachment = new SendMailWithAttachment();
 
-	public static void main(String[] args) throws IOException {
-		
-		SendMailWithAttachment objSender = new SendMailWithAttachment();
-		objSender.Send();
-	}
-
+            // Send email to each user
+            for (String email : emails) {
+                sendMailWithAttachment.send(email);
+            }
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
