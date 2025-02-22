@@ -33,6 +33,10 @@ function App() {
       path: "/resources",
       element: <Resources />
     },
+    {
+      path: "/map",
+      element: <MapPage />
+    }
   ])
 
   return (
