@@ -1,9 +1,9 @@
 import React from 'react'
 
-function polls() {
+function Polls() {
   return (
     <div>polls</div>
   )
 }
 
-export default polls
+export default Polls
