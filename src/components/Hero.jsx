@@ -15,7 +15,7 @@ function Hero() {
                 <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to='/'>Home</Link>
                 <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/registration">Report an Incident</Link>
                 <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/resources">Resources</Link>
-                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks'>Maps</Link>
+                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/map">Maps</Link>
                 <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/About">About</Link>
             </div>
         </div>
