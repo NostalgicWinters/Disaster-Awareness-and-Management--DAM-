@@ -1,8 +1,11 @@
 import java.util.List;
 
-public class Sender {
-    public static void main(String[] args) {
-        try {
+public class Sender 
+{
+    public static void main(String[] args) 
+    {
+        try 
+         {
             // Fetch Email from MongoDB Atlas
             List<String> emails = SendMailWithAttachment.fetchEmailsFromMongoDB();
             
@@ -10,12 +13,15 @@ public class Sender {
             SendMailWithAttachment sendMailWithAttachment = new SendMailWithAttachment();
 
             // Send email to each user
-            for (String email : emails) {
+            for (String email : emails) 
+            {
                 sendMailWithAttachment.send(email);
             }
             
-        } catch (Exception e) {
+         } 
+        catch (Exception e) 
+            {
             e.printStackTrace();
-        }
+            }
     }
 }
