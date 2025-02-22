@@ -90,17 +90,5 @@ public class SendMailWithAttachment
     }
 }
 
- /*   // Main Method: Fetch Email & Send Alerts
-    public static void main(String[] args) {
-        SendMailWithAttachment mailer = new SendMailWithAttachment();
-        List<String> emailList = fetchEmailsFromMongoDB();
 
-        for (String email : emailList) {
-            try {
-                mailer.send(email);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
 }*/
