@@ -9,16 +9,14 @@ function Hero() {
         </video>
         <div className='flex justify-between'>
             <div>
-                <b className='text-white text-3xl p-2'>Disaster Awareness And Management (DAM)
-                </b>
-
+                <h1 className='text-white text-3xl p-2'>Disaster Awareness And Management (DAM)</h1>
             </div>
             <div className='flex align-middle'>
-                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to='/'><b>Home</b></Link>
-                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/registration"><b>Report an Incident</b></Link>
-                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/resources"><b>Resources</b></Link>
-                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks'><b>Volunteer</b></Link>
-                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/About"><b>About</b></Link>
+                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to='/'>Home</Link>
+                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/registration">Report an Incident</Link>
+                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/resources">Resources</Link>
+                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks'>Volunteer</Link>
+                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/About">About</Link>
             </div>
         </div>
         
