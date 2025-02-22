@@ -10,4 +10,4 @@ function Polls() {
   )
 }
 
-export default Polls
+export default Polls;
