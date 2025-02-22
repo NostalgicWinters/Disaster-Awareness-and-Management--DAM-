@@ -6,10 +6,10 @@ function Resources() {
     <div>
         <Hero />
         <div className="min-h-screen p-8">
-      <h1 className="text-4xl font-bold text-center text-red-700 mb-6 -mt-10">Resources</h1>
+      <h1 className="text-4xl font-bold text-center text-red-700 mb-6">Resources</h1>
 
       {/* User Guides */}
-      <section className="bg-white p-6 rounded-lg shadow-md mb-4">
+      <section className="bg-white p-6 rounded-lg shadow-md mb-6">
         <h2 className="text-2xl font-semibold text-red-600">User Guides & Tutorials</h2>
         <p className="text-gray-600">Learn how to navigate and use our disaster response platform effectively.</p>
         <ul className="list-disc list-inside mt-2 text-gray-600">
