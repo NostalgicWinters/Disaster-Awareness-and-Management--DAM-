@@ -1,69 +1,95 @@
+import com.mongodb.client.*;
+import org.bson.Document;
+import javax.mail.*;
+import javax.mail.internet.*;
 import java.io.File;
 import java.io.IOException;
-import javax.mail.PasswordAuthentication;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.Multipart;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
-
 public class SendMailWithAttachment {
- 
- public void Send() throws IOException {
-  String to = "dileep.gautam@gmail.com"; // to address. It can be any like gmail, hotmail etc.
-  final String from = "sillymonk05@gmail.com"; // from address. As this is using Gmail SMTP.
-  final String password = "zerg rsnk qqtx kwye"; // password for from mail address. 
- 
-  Properties props = new Properties();
-  props.put("mail.smtp.host", "smtp.gmail.com");  // SMTP server
-  props.put("mail.smtp.port", "587");  // Port for STARTTLS
-  props.put("mail.smtp.auth", "true");  // Enable authentication
-  props.put("mail.smtp.auth.mechanisms", "PLAIN");
-  props.put("mail.smtp.starttls.enable", "true");  // Enable STARTTLS
-  props.put("mail.smtp.starttls.required", "true");  // Ensure STARTTLS is required
-  props.put("mail.smtp.ssl.protocols", "TLSv1.2");//Ensure tls used 
+    
+    // Fetch Email from MongoDB Atlas
+    public static List<String> fetchEmailsFromMongoDB() {
+        List<String> emailList = new ArrayList<>();
 
-  Session session = Session.getInstance(props, new javax.mail.Authenticator() {
-	    protected PasswordAuthentication getPasswordAuthentication() {
-	        return new PasswordAuthentication(from, password);
-	    }
-	});
+        // MongoDB Atlas Connection String
+        String mongoUri = "mongodb+srv://admin:admin@backenddb.yino4.mongodb.net/?retryWrites=true&w=majority";
+        
+        try (MongoClient mongoClient = MongoClients.create(mongoUri)) {
+            MongoDatabase database = mongoClient.getDatabase("disaster_alerts");
+            MongoCollection<Document> collection = database.getCollection("users");
 
-	// Enable debug mode
-	session.setDebug(true);
- 
-  try {
- 
-   Message message = new MimeMessage(session);
-   message.setFrom(new InternetAddress(from));
-   message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
-   message.setSubject("Message from Java Simplifying Tech");
-    
-   String msg = "This is to inform you that There is a disaster reported in the vicinity !!!";
-    
-   MimeBodyPart mimeBodyPart = new MimeBodyPart();
-   mimeBodyPart.setContent(msg, "text/html");
-     
-   Multipart multipart = new MimeMultipart();
-   multipart.addBodyPart(mimeBodyPart);
-    
-   MimeBodyPart attachmentBodyPart = new MimeBodyPart();
-   attachmentBodyPart.attachFile(new File("D:\\YUSHI_PRGMER\\FOSSHACK\\EMail\\Advisory.pdf"));
-   multipart.addBodyPart(attachmentBodyPart);
-   message.setContent(multipart);
- 
-   Transport.send(message);
- 
-   System.out.println("Mail successfully sent..");
- 
-  } catch (MessagingException e) {
-   e.printStackTrace();
-  }
- }
+            FindIterable<Document> users = collection.find();
+            for (Document user : users) {
+                String email = user.getString("email");
+                if (email != null) {
+                    emailList.add(email);
+                }
+            }
+        }
+        return emailList;
+    }
+
+    // Send Email with Attachment
+    public void send(String to) throws IOException {
+        final String from = "yourEmail@gmail.com";  // Your email
+        final String password = "yourAppPassword";  // Use Gmail App Password
+
+        Properties props = new Properties();
+        props.put("mail.smtp.host", "smtp.gmail.com");
+        props.put("mail.smtp.port", "587");
+        props.put("mail.smtp.auth", "true");
+        props.put("mail.smtp.starttls.enable", "true");
+
+        Session session = Session.getInstance(props, new Authenticator() {
+            protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication(from, password);
+            }
+        });
+     // Enable Debug Mode
+        session.setDebug(true);
+
+        try {
+            Message message = new MimeMessage(session);
+            message.setFrom(new InternetAddress(from));
+            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
+            message.setSubject("Disaster ALERT !!! ");
+
+            String msg = "This is to inform you that there is a disaster reported in your vicinity! Stay safe.";
+
+            MimeBodyPart textPart = new MimeBodyPart();
+            textPart.setContent(msg, "text/html");
+
+            MimeBodyPart attachmentPart = new MimeBodyPart();
+            attachmentPart.attachFile(new File("D:\\YUSHI_PRGMER\\FOSSHACK\\EMail\\Advisory.pdf"));
+
+            Multipart multipart = new MimeMultipart();
+            multipart.addBodyPart(textPart);
+            multipart.addBodyPart(attachmentPart);
+            message.setContent(multipart);
+
+            Transport.send(message);
+            System.out.println("Email sent to: " + to);
+
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+    }
 }
+
+ /*   // Main Method: Fetch Email & Send Alerts
+    public static void main(String[] args) {
+        SendMailWithAttachment mailer = new SendMailWithAttachment();
+        List<String> emailList = fetchEmailsFromMongoDB();
+
+        for (String email : emailList) {
+            try {
+                mailer.send(email);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}*/
