@@ -6,7 +6,7 @@ function MapPage() {
   return (
     <div>
         <Hero />
-        <div>
+        <div className='m-10 rounded-3xl'>
             <MapComponent />
         </div>
     </div>

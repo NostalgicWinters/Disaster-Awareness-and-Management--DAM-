@@ -5,6 +5,7 @@ import Login from './components/Login'
 import About from './components/About'
 import Polls from './components/polls'
 import Resources from './components/Resources'
+import MapPage from './components/MapPage'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
       element: <Home />
     },
     {
-      path: "/registration",
+      path: "/registeration",
       element: <Registration />
     },
     {
