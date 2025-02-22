@@ -2,19 +2,31 @@ import React from 'react'
 import Hero from './Hero'
 import { Link } from 'react-router-dom'
 import Card from './Card'
+import { useState } from 'react'
 
 function Polls() {
+
+  const [polls, setPolls] = useState([
+    { location: "Mumbai", disasterType: "tsunami" },
+    { location: "Mt. Fuji", disasterType: "volcano" },
+    { location: "Delhi", disasterType: "earthquake" },
+  ]);
+
+  const addPoll = (newPoll) => {
+    setPolls([...polls, newPoll]);
+  };
+
   return (
     <div>
       <Hero />
-      <div className='flex justify-center'>
-        <Card location="Mumbai" disasterType="tsunami" />
-        <Card location="Mt. Fuji" disasterType="volcano" />
-        <Card location="Delhi" disasterType="earthquake" />
+      <div className='flex justify-center flex-wrap'>
+        {polls.map((poll, index) => (
+          <Card key={index} location={poll.location} disasterType={poll.disasterType} />
+        ))}
       </div>
-      <Link to='/Addpolls' className='text-white bg-red-600 py-2.5 px-5 rounded-2xl flex justify-self-center justify-center my-4'>
+      <Link to='/Addpoll' className='text-white bg-red-600 py-2.5 px-5 rounded-2xl flex justify-center my-4 mx-90'>
         <span className='font-bold align-middle mx-2'>+</span>
-        <text className='align-middle'>Add Post</text>
+        <span className='align-middle'>Add Post</span>
       </Link>
     </div>
   )
