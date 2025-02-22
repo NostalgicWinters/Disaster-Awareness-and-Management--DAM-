@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Hero from './Hero'
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Registration() {
 
@@ -8,24 +9,31 @@ function Registration() {
     const [mobile, setMobile] = useState('');
     const [location, setLocation] = useState('');
 
+    const navigate = useNavigate();
+
     const handleRegister = async () => {
-        const userData = { email,mobile, location };
+        const userData = { email, mobile, location };
     
         try {
-            const response = await fetch("http://localhost:5000/registeration", {
+            const response = await fetch("http://localhost:5000/registeration", { 
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(userData)
             });
     
             const data = await response.json();
+    
             if (response.ok) {
                 alert("Registration Successful!");
+                navigate('/');
+            } else if (response.status === 400 && data.message === "User already exists") {
+                alert("This email is already registered. Please login.");
             } else {
                 alert(data.message || "Registration Failed");
             }
         } catch (error) {
             console.error("Error:", error);
+            alert("Something went wrong. Please try again.");
         }
     };
 
