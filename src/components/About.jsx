@@ -28,6 +28,12 @@ function About() {
             <h2 className='font-bold text-3xl m-2 mt-4'>Crafted By Visionary Minds:</h2>
             <p className='m-2 text-xl' >Dev Verma, Anmol Upadhyay, Aayush Gautam.</p>
             
+      <ul>
+       <li> <a href="https://www.linkedin.com/in/anmol-upadhyay-msd7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIn_ANMOL</a></li>
+        <a href="https://www.linkedin.com/in/dev-verma-9b5510324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIn_DEV</a>
+        <a href="https://www.linkedin.com/in/aayush-gautam-955a35206?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIN_AAYUSH</a>
+      </ul>
+            
         </div>
     </div>
   )
