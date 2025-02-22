@@ -4,7 +4,7 @@ import Registration from './components/Registration'
 import Login from './components/Login'
 import About from './components/About'
 import Polls from './components/polls'
-import Resources from './components/Resources'
+import Addpoll from './components/Addpoll'
 
 function App() {
 
@@ -30,9 +30,9 @@ function App() {
       element: <Polls />
     },
     {
-      path: "/resources",
-      element: <Resources />
-    },
+      path: "/Addpolls",
+      element: <Addpoll />
+    }
   ])
 
   return (
