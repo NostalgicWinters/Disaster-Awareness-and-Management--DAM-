@@ -23,6 +23,8 @@ Directory structure:
         ├── MapComponent.jsx
         └── Registration.jsx
 
+## Ingenious Minds Behind Our Project
+![image alt](https://github.com/NostalgicWinters/Disaster-Awareness-and-Management--DAM-/blob/main/Meet-Our-Team.png?raw=true)
 
 ## Overview
 
@@ -37,6 +39,7 @@ In disaster-stricken areas, it is critical to have real-time information on the 
 - **Real-time Reporting**: Users can report disasters (e.g., floods, earthquakes) by marking affected locations on an interactive map, along with details on the severity and impact of the disaster.
 - **Resource Sharing**: Users can share available resources such as medical supplies, food, and volunteer support to help those in need.
 - **Map Integration**: Integrated with OpenStreetMap API, the platform provides real-time visual updates of disaster zones, evacuation routes, and safe zones.
+  although WE DON'T HAVE API CENTRIC PROJECT.
 - **Collaboration with Authorities**: The app will enable government agencies, NGOs, and local community groups to collaborate and coordinate disaster management efforts effectively.
 
 ## Website Prototype
@@ -69,7 +72,9 @@ The long-term goal of the platform is to evolve into a scalable disaster managem
 
 - **Map Safe Zones and Evacuation Routes**: Use real-time data to mark evacuation zones, shelters, and safe routes, improving emergency planning and
 
-```
+  
+
+
 
 ## Contributing
 
