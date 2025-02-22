@@ -6,6 +6,7 @@ import About from './components/About'
 import Polls from './components/polls'
 import Resources from './components/Resources'
 import MapPage from './components/MapPage'
+import Addpoll from './components/Addpoll'
 
 function App() {
 
@@ -37,6 +38,10 @@ function App() {
     {
       path: "/map",
       element: <MapPage />
+    },
+    {
+      path: "/Addpoll",
+      element: <Addpoll />
     }
   ])
 

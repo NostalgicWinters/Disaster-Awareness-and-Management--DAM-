@@ -51,7 +51,7 @@ function Addpoll() {
                 </div>
             </div>
             
-            <button className='flex justify-self-center'><text className='text-white font-dm-sans bg-red-600 px-30 py-2 rounded-xl mx-2 my-5 hover:cursor'>Post</text></button>
+            <button className='flex justify-self-center rounded-xl px-60 bg-red-600 hover:cursor'><text className='text-white font-dm-sans mx-4 my-2'>Post</text></button>
         </div>
     </div>
   )

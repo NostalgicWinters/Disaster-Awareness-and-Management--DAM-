@@ -19,7 +19,7 @@ function Login() {
           
           if (response.ok) {
               alert("Login Successful!");
-              navigate('/');
+              navigate('/polls');
           } else {
               alert(data.message);
           }
