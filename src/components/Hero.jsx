@@ -13,7 +13,7 @@ function Hero() {
             </div>
             <div className='flex align-middle'>
                 <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to='/'>Home</Link>
-                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/registration">Report an Incident</Link>
+                <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/registeration">Report an Incident</Link>
                 <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/resources">Resources</Link>
                 <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/map">Maps</Link>
                 <Link className='text-white text-2xl p-3 font-dm-sans clickableLinks' to="/About">About</Link>
