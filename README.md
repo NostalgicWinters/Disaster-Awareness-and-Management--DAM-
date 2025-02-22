@@ -69,7 +69,7 @@ The long-term goal of the platform is to evolve into a scalable disaster managem
 
 - **Map Safe Zones and Evacuation Routes**: Use real-time data to mark evacuation zones, shelters, and safe routes, improving emergency planning and
 
-```
+
 
 ## Contributing
 
