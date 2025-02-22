@@ -23,6 +23,8 @@ Directory structure:
         ├── MapComponent.jsx
         └── Registration.jsx
 
+## Ingenious Minds Behind Our Project
+![image alt](https://github.com/NostalgicWinters/Disaster-Awareness-and-Management--DAM-/blob/main/Meet-Our-Team.png?raw=true)
 
 ## Overview
 
