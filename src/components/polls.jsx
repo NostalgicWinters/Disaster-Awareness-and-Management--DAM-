@@ -1,9 +1,15 @@
 import React from 'react'
+import Hero from './Hero'
+import { Link } from 'react-router-dom'
+import Card from './Card'
 
-function polls() {
+function Polls() {
   return (
-    <div>polls</div>
+    <div>
+      <Hero />
+      <Card />
+    </div>
   )
 }
 
-export default polls
+export default Polls
