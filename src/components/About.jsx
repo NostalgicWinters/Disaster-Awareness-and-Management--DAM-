@@ -22,18 +22,21 @@ function About() {
             <h2 className='font-bold text-3xl m-2 mt-4'>Why It Matters</h2>
             <p className='m-2 text-xl' >In times of crisis, speed and accuracy can save lives. By harnessing the power of social media and AI, we provide a centralized, accessible, and real-time disaster awareness system for individuals, organizations, and first responders.</p>
             <h2 className='font-bold text-3xl m-2 mt-4'>Join Us</h2>
-            <p className='m-2 text-xl' >We are committed to improving disaster response through innovation and collaboration. Whether you're a developer, researcher, or someone passionate about disaster relief, we welcome your contributions to make this platform even more impactful.
-            <p>Contact for more details:</p>
-            9142039XXX</p>
-            <h2 className='font-bold text-3xl m-2 mt-4'>Crafted By Visionary Minds:</h2>
-            <p className='m-2 text-xl' >Dev Verma, Anmol Upadhyay, Aayush Gautam.</p>
+            <p className='m-2 text-xl' >We are committed to improving disaster response through innovation and collaboration. Whether you're a developer, researcher, or someone passionate about disaster relief, we welcome your contributions to make this platform even more impactful.</p>
             
-      <ul>
-       <li> <a href="https://www.linkedin.com/in/anmol-upadhyay-msd7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIn_ANMOL</a></li>
-        <a href="https://www.linkedin.com/in/dev-verma-9b5510324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIn_DEV</a>
-        <a href="https://www.linkedin.com/in/aayush-gautam-955a35206?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIN_AAYUSH</a>
-      </ul>
-            
+        </div>
+        <div className='bg-gray-800 mt-18 text-white p-3'>
+          <div className='border-white rounded-2xl border-2 p-6'>
+                <p className='font-bold m-2'>Contact for more details:</p>
+                <p className='m-2'>9142039XXX</p>
+                <h2 className='font-bold text-3xl m-2 mt-4'>Crafted By Visionary Minds:</h2>
+                <p className='m-2 text-xl' >Dev Verma, Anmol Upadhyay, Aayush Gautam.</p>
+                <ul>
+                  <image href='/linkedIn.svg' width="30px" height="30px"/><li> <a className='text-white' href="https://www.linkedin.com/in/anmol-upadhyay-msd7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIn_ANMOL</a></li>
+                  <image href='/linkedIn.svg' /><li><a  href="https://www.linkedin.com/in/dev-verma-9b5510324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIn_DEV</a></li>
+                  <image href='/linkedIn.svg'/><li href='/linkedIn.svg'><a href="https://www.linkedin.com/in/aayush-gautam-955a35206?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">LinkedIN_AAYUSH</a></li> 
+                </ul>
+          </div>
         </div>
     </div>
   )
