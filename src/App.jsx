@@ -3,6 +3,7 @@ import Home from './components/Home'
 import Registration from './components/Registration'
 import Login from './components/Login'
 import About from './components/About'
+import Polls from './components/polls'
 
 function App() {
 
@@ -23,6 +24,10 @@ function App() {
       path: "/About",
       element: <About />
     },
+    {
+      path: "/polls",
+      element: <Polls />
+    }
   ])
 
   return (
