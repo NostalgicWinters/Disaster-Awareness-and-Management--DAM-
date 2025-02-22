@@ -25,7 +25,7 @@ function About() {
             <p className='m-2 text-xl' >We are committed to improving disaster response through innovation and collaboration. Whether you're a developer, researcher, or someone passionate about disaster relief, we welcome your contributions to make this platform even more impactful.
             <p>Contact for more details:</p>
             9142039XXX</p>
-            <h2 className='font-bold text-3xl m-2 mt-4'>Crafted By Visionary Minds</h2>
+            <h2 className='font-bold text-3xl m-2 mt-4'>Crafted By Visionary Minds:</h2>
             <p className='m-2 text-xl' >Dev Verma, Anmol Upadhyay, Aayush Gautam.</p>
             
         </div>
