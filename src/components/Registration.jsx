@@ -8,6 +8,7 @@ function Registration() {
     const [email, setEmail] = useState('');
     const [mobile, setMobile] = useState('');
     const [location, setLocation] = useState('');
+    const [array, setarray] = useState([]);
 
     const navigate = useNavigate();
 
@@ -24,6 +25,7 @@ function Registration() {
             const data = await response.json();
     
             if (response.ok) {
+                setarray(...array, email);
                 alert("Registration Successful!");
                 navigate('/');
             } else if (response.status === 400 && data.message === "User already exists") {
@@ -37,6 +39,7 @@ function Registration() {
         }
     };
 
+    
   return (
     <div>
         <Hero />

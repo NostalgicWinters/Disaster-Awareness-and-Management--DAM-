@@ -25,7 +25,7 @@ function About() {
             <p className='m-2 text-xl' >We are committed to improving disaster response through innovation and collaboration. Whether you're a developer, researcher, or someone passionate about disaster relief, we welcome your contributions to make this platform even more impactful.</p>
             
         </div>
-        <div className='bg-gray-800 mt-18 text-white p-3'>
+        <div className='bg-black mt-18 text-white p-3'>
           <div className='border-white rounded-2xl border-2 p-6'>
                 <p className='font-bold m-2'>Contact for more details:</p>
                 <p className='m-2'>9142039XXX</p>
