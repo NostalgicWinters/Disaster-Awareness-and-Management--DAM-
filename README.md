@@ -3,7 +3,7 @@
 
 Directory structure:
 
-└── nostalgicwinters-disaster-awareness-and-management--dam-/
+    └── nostalgicwinters-disaster-awareness-and-management--dam-/
 
     ├── README.md
     ├── LICENSE.txt
