@@ -8,6 +8,8 @@ function Card({disasterType, location}) {
     const total = upvote+downvote;
     const percentAgree = (upvote/total)*100
 
+    
+
 
   return (
     <div class="bg-black opacity-70 shadow-lg rounded-lg pt-8 pl-8 pr-8 pb-6 w-80 m-2 my-6">

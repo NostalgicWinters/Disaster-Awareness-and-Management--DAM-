@@ -1,35 +1,38 @@
-import React from 'react'
-import Hero from './Hero'
-import { Link } from 'react-router-dom'
-import Card from './Card'
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react';
+import Hero from './Hero';
+import { Link } from 'react-router-dom';
+import Card from './Card';
 
 function Polls() {
+    const [list, setList] = useState([
+        { location: "Delhi", disasterType: "tsunami" },
+        { location: "Mumbai", disasterType: "volcano" },
+    ]);
 
-  const [polls, setPolls] = useState([
-    { location: "Mumbai", disasterType: "tsunami" },
-    { location: "Mt. Fuji", disasterType: "volcano" },
-    { location: "Delhi", disasterType: "earthquake" },
-  ]);
+    // Example of adding a new item to the list
+    useEffect(() => {
+        const newItem = { location: "Delhi", disasterType: "volcano" };
+        setList(prevList => [...prevList, newItem]);
+    }, []); // Empty dependency array means this runs once on mount
 
-  const addPoll = (newPoll) => {
-    setPolls([...polls, newPoll]);
-  };
-
-  return (
-    <div>
-      <Hero />
-      <div className='flex justify-center flex-wrap'>
-        {polls.map((poll, index) => (
-          <Card key={index} location={poll.location} disasterType={poll.disasterType} />
-        ))}
-      </div>
-      <Link to='/Addpoll' className='text-white bg-red-600 py-2.5 px-5 rounded-2xl flex justify-center my-4 mx-90'>
-        <span className='font-bold align-middle mx-2'>+</span>
-        <span className='align-middle'>Add Post</span>
-      </Link>
-    </div>
-  )
+    return (
+        <div>
+            <Hero />
+            <div className='flex justify-center'>
+                {list.map((item, index) => (
+                    <Card 
+                        key={index} // Add a unique key for each item
+                        location={item.location} 
+                        disasterType={item.disasterType} 
+                    />
+                ))}
+            </div>
+            <Link to='/Addpoll' className='text-white bg-red-600 py-2.5 px-5 rounded-2xl flex justify-self-center justify-center my-4'>
+                <span className='font-bold align-middle mx-2'>+</span>
+                <text className='align-middle'>Add Post</text>
+            </Link>
+        </div>
+    );
 }
 
 export default Polls;
