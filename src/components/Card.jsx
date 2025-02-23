@@ -8,6 +8,17 @@ function Card({disasterType, location}) {
     const total = upvote+downvote;
     const percentAgree = (upvote/total)*100
 
+    fetch('http://localhost:5173/polls', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ upvote: {upvote}, downvote: {downvote} })
+  })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+
     
 
 
