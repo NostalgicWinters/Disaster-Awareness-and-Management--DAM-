@@ -1,4 +1,4 @@
-# Disaster Alert Service India
+# Disaster Alert Service Global
 # Local Disaster Response Coordination Platform
 
 Directory structure:
