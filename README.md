@@ -1,5 +1,5 @@
 # Disaster Awareness And Management (DAM)
-# Local Disaster Response Coordination Platform
+## Local Disaster Response Coordination Platform
 
 Directory structure:
 
