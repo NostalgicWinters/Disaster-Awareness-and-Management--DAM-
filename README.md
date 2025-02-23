@@ -2,26 +2,53 @@
 # Local Disaster Response Coordination Platform
 
 Directory structure:
-
-        └── nostalgicwinters-disaster-awareness-and-management--dam-/
-        ├── README.md
-        ├── eslint.config.js
-        ├── index.html
-        ├── package.json
-        ├── vite.config.js
-        ├── wiki.py
-        ├── public/
+└── nostalgicwinters-disaster-awareness-and-management--dam-/
+    ├── README.md
+    ├── LICENSE.txt
+    ├── eslint.config.js
+    ├── index.html
+    ├── login.js
+    ├── package.json
+    ├── register.js
+    ├── server.js
+    ├── vite.config.js
+    ├── wiki.py
+    ├── backend/
+    │   └── EmailSender/
+    │       ├── pom.xml
+    │       ├── .classpath
+    │       ├── .project
+    │       ├── src/
+    │       │   └── main/
+    │       │       └── java/
+    │       │           ├── SendMailWithAttachment.java
+    │       │           └── Sender.java
+    │       ├── target/
+    │       │   └── classes/
+    │       └── .settings/
+    │           ├── org.eclipse.jdt.apt.core.prefs
+    │           ├── org.eclipse.jdt.core.prefs
+    │           └── org.eclipse.m2e.core.prefs
+    ├── public/
     └── src/
         ├── App.jsx
         ├── index.css
         ├── main.jsx
         ├── assets/
         └── components/
-         ── Hero.jsx
-        ├── Home.jsx
-        ├── Mainmsg.jsx
-        ├── MapComponent.jsx
-        └── Registration.jsx
+            ├── About.jsx
+            ├── Addpoll.jsx
+            ├── Card.jsx
+            ├── Hero.jsx
+            ├── Home.jsx
+            ├── Login.jsx
+            ├── Mainmsg.jsx
+            ├── MapComponent.jsx
+            ├── MapPage.jsx
+            ├── Registration.jsx
+            ├── Resources.jsx
+            └── polls.jsx
+
 
 ## Ingenious Minds Behind Our Project
 ![image alt](https://github.com/NostalgicWinters/Disaster-Awareness-and-Management--DAM-/blob/main/Meet-Our-Team.png?raw=true)
