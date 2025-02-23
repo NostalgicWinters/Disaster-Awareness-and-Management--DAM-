@@ -1,8 +1,10 @@
-# Disaster Alert Service Global
+# Disaster Awareness And Management (DAM)
 # Local Disaster Response Coordination Platform
 
 Directory structure:
+
 └── nostalgicwinters-disaster-awareness-and-management--dam-/
+
     ├── README.md
     ├── LICENSE.txt
     ├── eslint.config.js
@@ -14,6 +16,7 @@ Directory structure:
     ├── vite.config.js
     ├── wiki.py
     ├── backend/
+    
     │   └── EmailSender/
     │       ├── pom.xml
     │       ├── .classpath
@@ -31,6 +34,7 @@ Directory structure:
     │           └── org.eclipse.m2e.core.prefs
     ├── public/
     └── src/
+    
         ├── App.jsx
         ├── index.css
         ├── main.jsx
