@@ -11,10 +11,10 @@ public class SendMailWithAttachment {
     // Method to get hardcoded email addresses
     public static List<String> getHardcodedEmails() {
         return Arrays.asList(
-            "user1@example.com",
-            "user2@example.com",
-            "user3@example.com",
-            "user4@example.com"
+            "sillymonk05@gmail.com",
+            "sahajshiv6@gmail.com",
+            "dev.Sterling@outlook.com",
+            
         );
     }
 
